@@ -473,11 +473,6 @@ border-radius: 0px 0px 4px 4px;
 .icon-clients {
     fill: currentColor;
 }
-.icon-worker {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .footer {
     background: var(--bg-footer-color);
@@ -594,7 +589,7 @@ margin-left: 70px;
 }
 
 
-.footer-social .icon {
+.footer-social .icon-footer {
     fill: var(--white-color);
 }
 
@@ -603,10 +598,16 @@ margin-left: 70px;
     
 }
 
-.footer-social .icon {
+.footer-social .icon-footer {
     margin: auto;
 }
 
+.icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}
 /* .................PORTFOLIO PAGE................. */
 
 .gallery {
