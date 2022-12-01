@@ -200,7 +200,7 @@ img {
 }
 
 .icon {
-    fill: var(--prmary-text-color);
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -459,19 +459,20 @@ border-radius: 0px 0px 4px 4px;
     color: var(--borders);
     border: 1px solid currentColor;
     border-radius: 4px;
-    fill: currentColor;
 }
 
 .clients .item .link:hover,
 .clients .item .link:focus {
     border-color: var(--accent-color);
-    fill: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .clients .item+.item {
     margin-left: 30px;
 }
-
+.icon-clients {
+    fill: currentColor;
+}
 .icon-worker {
     display: flex;
     align-items: center;
@@ -549,10 +550,7 @@ border-radius: 0px 0px 4px 4px;
     list-style: none;
 }
 
-.footer-social {
-    margin-left: 70px;
-    margin-top: 15px;
-}
+
 
 .footer-social .title {
     margin-bottom: 20px;
@@ -578,6 +576,8 @@ margin-left: 70px;
 
 .link {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     width: 44px;
     height: 44px;
@@ -695,11 +695,15 @@ margin-left: 70px;
     display: flex;
 }
 
-.item-card:hover,
-.item-card:focus {
+.item-card-link:hover,
+.item-card-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.item-card-link {
+    text-decoration: none;
+    display: block;
+}
 
 .title-port {
     color: var(--title-text-color);
